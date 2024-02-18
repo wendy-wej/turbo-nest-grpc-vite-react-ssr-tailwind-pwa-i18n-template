@@ -14,7 +14,8 @@ import { join} from 'path';
 
 @Module({
   imports: [ServeStaticModule.forRoot({rootPath: join(__dirname, '../../..', 'users-demo-frontend','dist'),}),
-            EmployeesModule, PatientsModule, ClinicsModule, PharmaciesModule, AuthModule, UsersModule
+            EmployeesModule, 
+            PatientsModule, ClinicsModule, PharmaciesModule, AuthModule, UsersModule
     ],
   controllers: [AppController],
   providers: [AppService],
